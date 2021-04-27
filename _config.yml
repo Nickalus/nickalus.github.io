@@ -1,0 +1,158 @@
+# Site
+repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Nickalus Yonts
+title: Manager - Software Engineering
+email: NickYonts@Gmail.Com
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+github_username:  jekyll
+linkedin_username: jekyll
+youtube_username: jekyll
+
+# Additional icon links
+additional_links:
+- title: Link name
+  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+  url: Link url (eg. https://google.com)
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+about_title: About Me
+about_content: | # this will include new lines to allow paragraphs
+  New manager of software engineering coming from a background in C++ and Linux development. After working in software engineering for a few years I decided to make the transistion to a technical manager from a software engineer. I wanted to make this transistion because I wanted to help drive the direction VMware Carbon Black was going, while challenging my fellow developers to achieve the most they can in their careers 
+
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Project name
+        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        link_text: Link Text
+        additional_links:
+          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+            icon: fab fa-github
+            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+            icon: fab fa-github
+            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        quote: >
+          Short overview of the project (optional)
+        description: | # this will include new lines to allow paragraphs
+          Description about the work on/with the project
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: VMware Carbon Black
+        sub_title: Manager - Software Engineering
+        caption: Nov 2020 - present
+        description: | # this will include new lines to allow paragraphs
+          * Created roadmaps for two individual teams. Gave detailed milestones, dates of completition 
+          * Managed JIRA for tracking work completed.
+      - layout: left 
+        title: VMware Carbon Black
+        sub_title: Sr. Software Engineer
+        caption: Feb 2020 - Nov 2020
+        description: | 
+          my description
+      - layout: left 
+        title: VMware Carbon Black
+        sub_title: Software Engineer
+        caption: Aug 2018 - Feb 2020
+        description: | 
+          my description
+      - layout: left
+        title: Harris Corporation
+        sub_title: Software Engineer I
+        caption: May 2017 - Aug 2018
+        description: |
+          * Automated testing, analysis, and reporting so that developers could quickly build and debug applications. 
+          * Gathered and scripted a toolset for H.264 analysis to assist with debugging decoding issues. 
+          * Shortened a 4 hour long manual testing process into an hour long automated process.
+          * Created a framework to automatically create reports based on feedback from automated tests.
+      - layout: left 
+        title: Abaco Systems Inc
+        sub_title: Software Engineer I
+        caption: May 2016 - May 2017
+        description: |
+          * Automated build processes to allow developers to build for multiple Linux distributions with each code commit using Jenkins.
+          * Automated testing so that unit testing time can be cut from multiple hours of manual testing to several minutes, with automatic report generation.
+          * Rewrote automated testing application in C++11. Created a framework that allowed users and developers to add new features with ease. 
+          * Upgraded legacy C code (C89) to modern standards (C99).
+      - layout: left
+        title: Audio Authority Corp
+        sub_title: Programmer Intern
+        caption: May 2015 - May 2016
+        description: |
+          * Created a video intercom using the Raspberry Pi. Wrote custom software in Qt5, GStreamer, OpenGL, and C++ to handle real time video conferencing.
+          * Created an embedded media player with hardware support for RS232. Software was written in Python and allowed the user to switch betweeng different videos, to playing music with a slidshow of images. 
+          * Wrote software to assist in testing of products bringing down setup and testing time. Allowing a single person to test commands without the delay in setting up equipment. 
+      - layout: left
+        title: Seikowave Inc
+        sub_title: Junior Quality Manager
+        caption: Nov 2013 - May 2015
+        description: |
+          * Wrote procedures to manage checking of quality of software and hardware uses by the customer. Each system was tested using the procedure to ensure that the same level of quality was given to each customer.
+          * Created scripts to automate the install of software and testing of software. This allowed one person to do multiple tasks at once while reviewing logs for unusual information.
+          * Wrote bug reports, and patches or workarounds for bugs found during verification process.
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: University of Kentucky
+        sub_title: Bachelor of Science in Computer Science
+        caption: 2011 - 2016
+        description: | # this will include new lines to allow paragraphs
+          Description of qualification
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+
+      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
